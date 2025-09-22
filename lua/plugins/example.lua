@@ -1,17 +1,18 @@
 return {
-  { "projekt0n/github-nvim-theme" },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "github_light_default",
-    },
+    "projekt0n/github-nvim-theme",
+    name = "github-theme",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("github-theme").setup({})
+      vim.cmd("colorscheme github_light_default")
+    end,
   },
   {
     "folke/trouble.nvim",
     opts = { use_diagnostic_signs = true },
   },
-
-  -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
     keys = {
@@ -81,9 +82,6 @@ return {
       })
     end,
   },
-
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
