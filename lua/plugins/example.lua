@@ -5,7 +5,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("github-theme").setup({})
+      require("github-theme").setup({ specs = { all = { bg0 = "#ffffff", bg3 = "#f5f6f8" } } })
       vim.cmd("colorscheme github_light_default")
     end,
   },
