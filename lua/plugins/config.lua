@@ -1,4 +1,3 @@
--- TODO: keymap to focus files
 -- TODO: under bufferline display current file path
 -- TODO: fix icons and pick proper colorscheme
 return {
