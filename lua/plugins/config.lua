@@ -1,5 +1,7 @@
--- TODO: under bufferline display current file path
--- TODO: fix icons and pick proper colorscheme
+-- TODO: autocomplete with tab
+-- TODO: tab code completion
+-- TODO: language support
+-- TODO: test this on real project - just pull open source thing and try to change
 return {
   {
     "projekt0n/github-nvim-theme",
@@ -72,14 +74,13 @@ return {
     end,
   },
 
-  -- the opts function can also be used to change the default opts:
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(_, opts)
       table.insert(opts.sections.lualine_x, {
         function()
-          return "😄"
+          return "Hello, Robert"
         end,
       })
     end,
