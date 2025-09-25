@@ -2,6 +2,7 @@ return {
   desc = "Snacks File Explorer",
   recommended = true,
   "folke/snacks.nvim",
+  -- https://www.reddit.com/r/neovim/comments/1jjlouo/snacks_show_hidden_files/
   opts = { explorer = {}, picker = { hidden = true, ignored = true } },
   keys = {
     {
