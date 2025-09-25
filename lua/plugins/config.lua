@@ -1,7 +1,6 @@
--- TODO: for golang and ts - configure lsp, plugins for autoimport, etc.
+-- TODO: complete indent highlight
 -- TODO: autocomplete with tab
 -- TODO: tab code completion
--- TODO: language support
 -- TODO: test this on real project - just pull open source thing and try to change
 return {
   {
