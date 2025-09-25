@@ -47,6 +47,7 @@ return {
         "typescript",
         "go",
         "python",
+        "hcl",
         "terraform",
       })
     end,
@@ -73,6 +74,7 @@ return {
         "gopls",
         "golines",
         "goimports",
+        "terraform-ls",
       },
     },
   },
