@@ -1,9 +1,8 @@
--- TODO: fix colorscheme
+-- TODO: for golang and ts - configure lsp, plugins for autoimport, etc.
 -- TODO: autocomplete with tab
 -- TODO: tab code completion
 -- TODO: language support
 -- TODO: test this on real project - just pull open source thing and try to change
--- TODO: for golang and ts - configure lsp, plugins for autoimport, etc.
 return {
   {
     "projekt0n/github-nvim-theme",
@@ -47,6 +46,8 @@ return {
         "tsx",
         "typescript",
         "go",
+        "python",
+        "terraform",
       })
     end,
   },
