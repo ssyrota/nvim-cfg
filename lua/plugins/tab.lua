@@ -1,5 +1,3 @@
-print("yup it works")
-print("it works twice yeaah")
 return {
   {
     "friendly-snippets",
@@ -15,6 +13,12 @@ return {
       keymap = {
         preset = "super-tab",
       },
+      completion = {
+        documentation = {
+          auto_show = false,
+        },
+      },
+      signature = { enabled = false },
     },
   },
 }
