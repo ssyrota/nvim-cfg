@@ -6,7 +6,7 @@ return {
     config = function()
       require("ibl").setup({
         debounce = 50,
-        scope = { enabled = true },
+        scope = { enabled = false },
       })
     end,
   },
