@@ -1,11 +1,5 @@
 return {
   {
-    "onsails/lspkind.nvim",
-    {
-      enabled = true,
-    },
-  },
-  {
     "blink.cmp",
     --- @module 'blink.cmp'
     --- @type blink.cmp.Config
@@ -32,7 +26,6 @@ return {
           auto_show = false,
         },
       },
-      signature = { enabled = true },
     },
   },
 }
