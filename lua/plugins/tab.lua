@@ -1,8 +1,8 @@
 return {
   {
-    "friendly-snippets",
-    opts = {
-      enabled = false,
+    "onsails/lspkind.nvim",
+    {
+      enabled = true,
     },
   },
   {
@@ -15,18 +15,24 @@ return {
       },
       completion = {
         menu = {
+          draw = {
+            components = {
+              kind_icon = {
+                text = function(ctx)
+                  local icon = require("lspkind").symbolic(ctx.kind, { mode = "symbol" })
+                  return icon .. ctx.icon_gap
+                end,
+              },
+            },
+          },
           auto_show = true,
           auto_show_delay_ms = 10,
-          border = "rounded",
         },
         documentation = {
           auto_show = false,
-          window = {
-            border = "rounded",
-          },
         },
       },
-      signature = { enabled = false, window = { border = "rounded" } },
+      signature = { enabled = true },
     },
   },
 }
