@@ -1,7 +1,3 @@
--- TODO: complete indent highlight
--- TODO: autocomplete with tab
--- TODO: tab code completion
--- TODO: test this on real project - just pull open source thing and try to change
 return {
   {
     "projekt0n/github-nvim-theme",
@@ -20,11 +16,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
       {
         "<leader>fp",
-        function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
+        function()
+          require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root })
+        end,
         desc = "Find Plugin File",
       },
     },
@@ -62,10 +58,7 @@ return {
       })
     end,
   },
-
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
-
   {
     "mason-org/mason.nvim",
     opts = {

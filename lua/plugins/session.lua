@@ -1,9 +1,7 @@
+--- TODO: make it don't close snacks file explorer
 return {
   "rmagatti/auto-session",
-  lazy = false,
   ---@module "auto-session"
   ---@type AutoSession.Config
-  opts = {
-    suppressed_dirs = { "~/", "~/Downloads", "/" },
-  },
+  opts = {},
 }
