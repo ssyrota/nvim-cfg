@@ -16,17 +16,17 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "lazLazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "plugins" },
-  },
-  defaults = {
-    lazy = false,
-    version = false,
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true,
     notify = false,
+  },
+  defaults = {
+    lazy = false,
+    version = false,
   },
   performance = {
     rtp = {
