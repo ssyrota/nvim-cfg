@@ -45,6 +45,13 @@ return {
         "hcl",
         "terraform",
       })
+      opts.incremental_selection = {
+        enabled = true,
+        keymaps = {
+          node_incremental = "v",
+          node_decremental = "V",
+        },
+      }
     end,
   },
   {
