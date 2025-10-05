@@ -1,6 +1,7 @@
 -- TODO: try jumping and editing by blocks/quotes/tags
 -- TODO: try and master marks inside nvim
 -- TODO: understand the flash or leap features(possibly remap search to f, only one char is useless)
+-- TODO: consider complete training to make less friction in real life
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
