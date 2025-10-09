@@ -45,13 +45,6 @@ return {
         "hcl",
         "terraform",
       })
-      opts.incremental_selection = {
-        enabled = true,
-        keymaps = {
-          node_incremental = "v",
-          node_decremental = "V",
-        },
-      }
     end,
   },
   {
@@ -66,6 +59,7 @@ return {
     end,
   },
   { import = "lazyvim.plugins.extras.lang.json" },
+  { import = "lazyvim.plugins.extras.lang.python" },
   {
     "mason-org/mason.nvim",
     opts = {
@@ -74,6 +68,28 @@ return {
         "golines",
         "goimports",
         "terraform-ls",
+        "pyright",
+        "ruff",
+        "dockerfile-language-server",
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                diagnosticMode = "workspace",
+                useLibraryCodeForTypes = true,
+                typeCheckingMode = "basic",
+              },
+            },
+          },
+        },
       },
     },
   },

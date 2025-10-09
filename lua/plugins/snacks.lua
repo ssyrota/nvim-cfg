@@ -9,7 +9,8 @@ return {
       "<leader>fe",
       function()
         -- https://www.reddit.com/r/neovim/comments/1k7rkfp/help_snacksnvim_explorer_with_kickstart_keybinds/
-        local explorer_pickers = Snacks.picker.get({ source = "explorer" })
+
+        local explorer_pickers = Snacks.picker.get({ source = "explorer" }) or {}
         if #explorer_pickers == 0 then
           Snacks.picker.explorer()
         else
